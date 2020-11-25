@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Chronometer</string>
+    <string name="change_background_color">Change background color</string>
+    <string name="reset">Reset</string>
+    <string name="pause">Pause</string>
+    <string name="start">Start</string>
+</resources>

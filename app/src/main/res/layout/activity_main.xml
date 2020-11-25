@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/rView"
+    android:orientation="vertical">
+
+    <!--CZAS-->
+    <Chronometer
+        android:id="@+id/chronometer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="50sp" />
+
+    <!--PRZYCISK START, odwlowanie do funkcji startujOdliczanie-onClick -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startujOdliczanie"
+        android:text="@string/start" />
+
+    <!--PRZYCISK PAUSE, odwolanie do funkcji pausujOdliczanie-onClick -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="pausujOdliczanie"
+        android:text="@string/pause" />
+
+    <!--PRZYCISK RESET, odwolanie do funkcji resetujOdliczanie-onClick -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="resetujOdliczanie"
+        android:text="@string/reset" />
+
+    <!--PRZYCISK DO ZMIANY KOLORU TŁA -->
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zmień kolor tła"
+        android:layout_centerInParent="true" />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:layout_marginBottom="40dp" />
+</LinearLayout>
